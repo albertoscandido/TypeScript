@@ -66,3 +66,43 @@ Ao rodar um desses comandos em uma pasta, será criado o arquivo tsconfig.json, 
 [TS Playground](https://www.typescriptlang.org/play) - site para escrever, compilar e executar código ts.
 
 
+# Tipos e Subtipos
+
+Em TS, todos os tipos são subtipos do tipo principal __any__ que pode representar qualquer valor.
+
+## Tipos primitivos
+
+- boolean 
+```TypeScript
+let vdd: boolean = true;
+```
+
+- number
+```TypeScript
+let x: number;
+let y: number = 5;
+```
+
+- string
+```TypeScript
+let s: string;
+let vazio: string = "";
+let def: string = 'def';
+```
+
+- void
+```TypeScript
+function helloWorld(): void {
+  console.log("Hello World!");
+}
+```
+
+- null
+```TypeScript
+let nullValue = null;
+```
+
+- undefined
+```TypeScript
+let undefinedValue = undefined;
+```
