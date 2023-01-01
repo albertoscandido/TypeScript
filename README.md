@@ -106,3 +106,9 @@ let nullValue = null;
 ```TypeScript
 let undefinedValue = undefined;
 ```
+
+## Bônus
+
+- Nesse [link](https://learn.microsoft.com/pt-br/training/modules/typescript-get-started/) você encontra um resumo em forma de módulos no site da microsoft que funciona como um start para quem está querendo saber o que é o TS.
+- [TS in five minutes](https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes.html)
+- artigo sobre [compiladores](https://www.dca.fee.unicamp.br/cursos/EA876/apostila/HTML/node37.html#:~:text=Um%20compilador%20%C3%A9%20um%20programa,de%20m%C3%A1quina%20para%20um%20processador.&text=O%20programa%20em%20linguagem%20simb%C3%B3lica,de%20m%C3%A1quina%20atrav%C3%A9s%20de%20montadores.) da unicamp
