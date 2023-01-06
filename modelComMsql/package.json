@@ -1,0 +1,20 @@
+{
+  "name": "modelcommsql",
+  "version": "1.0.0",
+  "description": "Vamos agora colocar os aprendizados em prática e ver como podemos usar Type Assertions, Generics, Classes e Interfaces ao estilo real life. Para esse projeto, vamos usar um banco de dados MySQL para gerenciar uma lista de livros. Crie o banco usando o sql abaixo:",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/readline-sync": "1.4",
+    "dotenv": "10.0",
+    "mysql2": "2.3",
+    "readline-sync": "1.4"
+  },
+  "devDependencies": {
+    "@types/node": "18.11"
+  }
+}
