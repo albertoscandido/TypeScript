@@ -7,3 +7,4 @@
 - [Tipagem Estática e Generics](https://github.com/albertoscandido/TypeScript/tree/tipagem_estatica_e_generics)
 - [Model com MySQL](https://github.com/albertoscandido/TypeScript/tree/tipagem_estatica_e_generics/modelComMsql)
 - [Model com Sequelize](https://github.com/albertoscandido/TypeScript/tree/tipagem_estatica_e_generics/ModelComSequelize)
+- [Exercícios - Tipagem estática e Generics](https://github.com/albertoscandido/TypeScript/tree/exercises_tipagem_estatica_e_generics)
