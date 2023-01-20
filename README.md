@@ -104,7 +104,7 @@ Adicione ao arquivo package.json os scripts que vão servir auxiliar na execuç�
 ~~~
 O script npm run db:reset vai apagar e gerar um novo banco de dados com as migrations e seeders que você criou. O script npm start executará o arquivo src/index.ts. Além desse scripts, você pode executar outros comandos que achar necessário para realizar os exercícios. Agora vamos lá!
 
-🚀 Exercício 1
+### 🚀 Exercício 1
 Crie uma migration chamada create-authors para criar uma tabela authors com as seguintes colunas:
 
 Nome da coluna	Descrição
@@ -112,7 +112,7 @@ id	deve ser do tipo integer, não pode ser nula e deve ser a chave primária da 
 name	deve ser do tipo string e não pode ser nulo
 Obs: o método down da migration deve ser capaz de remover a tabela. Obs 2: execute o comando npm run db:reset e verifique se a tabela foi criada antes de continuar para os próximos exercícios.
 
-🚀 Exercício 2
+### 🚀 Exercício 2
 Crie uma migration chamada create-genres para criar uma tabela genres com as seguintes colunas:
 
 Nome da coluna	Descrição
@@ -122,7 +122,7 @@ Obs: o método down da migration deve ser capaz de remover a tabela. Obs 2: Exec
 
 👀 De olho na dica: Depois de terminar os três primeiros exercícios, criar seeds para as tabelas pode facilitar a resolução dos próximos exercícios.
 
-🚀 Exercício 3
+### 🚀 Exercício 3
 Crie uma migration para criar uma tabela books com as seguintes colunas:
 
 Nome da coluna	Descrição
@@ -132,15 +132,15 @@ author_id	deve ser do tipo integer, não pode ser nula e deve ser chave estrange
 genre_id	deve ser do tipo integer, não pode ser nula e deve ser chave estrangeira da tabela (seu relacionamento é feito com o campo id da tabela genres)
 Obs: o método down da migration deve ser capaz de remover a tabela. Obs 2: Execute o comando npm run db:reset e verifique se a tabela foi criada antes de continuar para os próximos exercícios.
 
-🚀 Exercício 4
+### 🚀 Exercício 4
 Crie o model Author com as configurações necessárias da tabela authors.
 
-🚀 Exercício 5
+### 🚀 Exercício 5
 Crie o model Book com as configurações necessárias da tabela books.
 
 De olho na dica👀: crie o relacionamento entre as tabelas books e authors.
 
-🚀 Exercício 6
+### 🚀 Exercício 6
 Crie um arquivo src/index.ts que retorne um array de objetos com as seguintes chaves:
 
 author: deve possuir o valor correspondente ao nome do autor;
