@@ -267,3 +267,12 @@ const stringArray = getArray<string>(["Cats", "Dogs", "Birds"]);
 stringArray.push("Rabbits");
 stringArray.push(30); // Isto vai gerar um erro de compilação
 ~~~
+
+
+## Recursos Adicionais
+
+- [Willian Justen - Generics](https://www.youtube.com/watch?v=Zjs7IJuhdaM&list=PLlAbYrWSYTiPanrzauGa7vMuve7_vnXG_&index=13)
+
+- [Documentação do TypeScript - Generics (Em inglês)](https://www.typescriptlang.org/docs/handbook/2/generics.html)
+
+- [TypeScript - Documentação do Sequelize (Em inglês)](https://sequelize.org/docs/v6/other-topics/typescript/)
