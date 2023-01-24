@@ -54,4 +54,8 @@ export default class ProductService {
 
     return this.model.create(product);
   }
+
+  public getAll(): Promise<Product[]> {
+    return this.model.getAll();
+  }
 }
