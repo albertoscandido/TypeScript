@@ -1,9 +1,9 @@
 import connection from '../models/connection';
 import UserModel from '../models/user.model';
 import User from '../interfaces/user.interface';
+import auth from '../utils/auth/index';
 import Token from '../interfaces/token.interface';
-import { BadRequestError, NotFoundError } from 'restify-errors';
-import jwt from 'jsonwebtoken';
+import { BadRequestError } from 'restify-errors';
 
 const properties = ['username', 'vocation', 'level', 'password'];
 
@@ -54,8 +54,7 @@ export default class UserService {
       throw new BadRequestError(isValidUser);
     }
     const { id, username, password } = await this.model.create(user);
-    const token: Token = { token: '' }
-    token.token = jwt.sign({ username, password }, process.env.JWT_SECRET as string);
+    const token: Token = auth.generateToken(username, password);
     return token;
   }
 }

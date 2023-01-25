@@ -1,6 +1,7 @@
 import express, { NextFunction, Request, Response } from 'express';
 import productRouter from './routes/products.router';
 import userRouter from './routes/users.router';
+import orderRouter from './routes/order.router';
 
 const app = express();
 
@@ -8,6 +9,7 @@ app.use(express.json());
 
 app.use(productRouter);
 app.use(userRouter);
+app.use(orderRouter);
 
 app.use((err: Error, _req: Request, res: Response, next: NextFunction) => {
   const { name, message, details } = err as any;
