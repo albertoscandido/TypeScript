@@ -1,12 +1,11 @@
 import { Router } from 'express';
 import UserController from '../controllers/user.controller';
+import Validations from '../middlewares/validations';
 
 const router = Router();
 
 const userController = new UserController();
 
-const usersSlashId = '/users/:id';
-
-router.post('/users', userController.create);
+router.post('/users', Validations.validateNewUser, userController.create);
 
 export default router;
