@@ -66,4 +66,26 @@ export default class Validations {
 
     return next();
   }
+
+  public static validateOrder = (req: Request, res: Response, next: NextFunction) => {
+    const {username, password, ...body} = req.body;
+
+    const schemaRequired = joi.object({
+      productsIds: joi.required()
+    });
+
+    const schemaEntity = joi.object({
+      productsIds: joi.array().items(joi.number()),
+    });
+
+    let result = schemaRequired.validate(body);
+    if (result.error) return res.status(statusCodes.BAD_REQUEST).json({message: result.error.message});
+
+    result = schemaEntity.validate(body);
+    if (result.error) return res.status(statusCodes.UNPROCESSABLE_ENTITY).json({message: result.error.message});
+
+    if (body.productsIds.length < 1) return res.status(statusCodes.UNPROCESSABLE_ENTITY).json({message: "\"productsIds\" must include only numbers"});
+    return next();
+  }
+
 }

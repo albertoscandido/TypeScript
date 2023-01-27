@@ -9,4 +9,11 @@ export default class OrderController {
     const orders = await this.orderService.getAll();
     res.status(statusCodes.OK).json(orders);
   }
+
+  public create = async(req: Request, res: Response) => {
+    const { username, password, productsIds } = req.body;
+    const order = await this.orderService.create(username, password, productsIds);
+    if (!order) return res.status(statusCodes.UNAUTHORIZED).json({message: "Invalid token"});
+    return res.status(statusCodes.CREATED).json(order); 
+  }
 }
