@@ -8,6 +8,18 @@ const generateToken = (username: string, password: string) : Token => {
   return tokenObj;
 }
 
+const validateToken = (token: string) => {
+  let validUser;
+  if (token) {
+    jwt.verify(token, process.env.JWT_SECRET as string, (err, user) => {
+      if (err) return null;
+      validUser = user;
+    });
+  }
+  return validUser ? validUser : null;
+};
+
 export default {
-  generateToken
+  generateToken,
+  validateToken
 }
